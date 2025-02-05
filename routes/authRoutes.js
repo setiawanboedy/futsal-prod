@@ -20,7 +20,7 @@ const router = (0, express_1.Router)();
  *           schema:
  *             type: object
  *             properties:
- *               username:
+ *               email:
  *                 type: string
  *               password:
  *                 type: string
@@ -52,11 +52,11 @@ router.post("/login", AuthController_1.default.login);
  *           schema:
  *             type: object
  *             properties:
- *               username:
- *                 type: string
- *               password:
+ *               name:
  *                 type: string
  *               email:
+ *                 type: string
+ *               password:
  *                 type: string
  *     responses:
  *       201:
@@ -67,8 +67,6 @@ router.post("/login", AuthController_1.default.login);
  *               type: object
  *               properties:
  *                 id:
- *                   type: string
- *                 username:
  *                   type: string
  *                 email:
  *                   type: string
